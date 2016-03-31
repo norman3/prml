@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col-sm-3">
+    <h2>{{ page.group }}</h2>
+    <ul class="nav nav-pills nav-stacked">
+      {% for p in site.pages %}
+      {% if p.group == page.group %}
+      <li class="{% if p.title == page.title %}active{% endif %} {% if p.subgroup == true %}sub{% endif %}" >
+        <a href="{{ p.url | remove: '.html' | prepend: site.baseurl }}">{{ p.title }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="col-sm-9">
+    {% if site.github_url %}
+    <div class="navbar-right">
+      <a target="_blank" href="{{ site.github_url }}{{ site.github_editurl }}{{ page.url | replace: 'html', 'md' }}">
+        <button type="button" class="btn btn-default"><i class="fa fa-github">&nbsp;Edit</i></button>
+      </a>
+    </div>
+    {% endif %}
+
+    <header>
+      <h1>{{ page.title }}</h1>
+    </header>
+    <hr class="title">
+    <article>
+      {{ content }}
+    </article>
+  </div>
+</div>

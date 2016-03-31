@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="row">
+  {% if site.github_url %}
+  <div class="navbar-right">
+    <a target="_blank" href="{{ site.github_url }}{{ site.github_editurl }}{{ page.url | replace: 'html', 'md' }}">
+      <button type="button" class="btn btn-default"><i class="fa fa-github">&nbsp;Edit</i></button>
+    </a>
+  </div>
+  {% endif %}
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
+  <hr class="title">
+  <article>
+    {{ content }}
+  </article>
+</div>

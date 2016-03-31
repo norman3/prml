@@ -1,0 +1,41 @@
+---
+layout: page
+---
+<div class="container">
+  <div class="row">
+    {% include config.html %}
+    {% if site.avatar_url %}
+    {% for member in members %}
+      <div class="row">    
+    <div class="col-sm=2 col-md-1">
+      <!-- <div class="thumbnail"> -->
+      <a href="#" class="thumbnail">
+        <img src="{{ site.avatar_url }}/{{ member.ossid }}?s=320" alt="{{ member.name }}" width="162" height="162">
+      </a>
+    </div>
+      {% if site.github_url %}
+
+      <div class="col-sm=4 col-md-2">
+        <a target="_blank" href="{{ site.github_url }}/{{ member.ossname }}">
+          <!-- <button type="button" class="btn btn-default"><i class="fa fa-github fa-lg">&nbsp;</i>{{ member.name }}</button> -->
+          <p><i class="fa fa-github fa-lg">&nbsp;</i>{{ member.name }}</p>
+        </a>
+      </div>
+      {% else %}
+      <p class="text-center"><strong>{{ member.name }}</strong></p>          
+      {% endif %}
+      <!-- </div> -->
+    <!-- </div> -->
+      </div>    
+    {% endfor %}    
+      {% endif %}
+
+  </div>
+  <hr class="title">
+  <article>
+    {{ content }}
+  </article>
+</div>
+
+
+

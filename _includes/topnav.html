@@ -1,0 +1,53 @@
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="{{ site.baseurl }}/"><strong>{{ site.title }}</strong></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+          {% include config.html %}
+          {% for entry in topnav %}
+          {% if entry.disable %}
+            <li><a href="#"><strong class="text-danger">{{ entry.title }}</strong></a></li>
+          {% else %}
+            {% if entry.ext_url %}
+            <li><a href="{{ entry.ext_url }}" target="_blank"><strong>{{ entry.title }}</strong></a></li>
+            {% elsif entry.url %}
+            <li {% if entry.group == page.group %} class="active" {% endif %}>
+              <a href="{{ entry.url | prepend: site.baseurl }}"><strong>{{ entry.title }}</strong></a>
+            </li>
+            {% elsif entry.items %}
+            <!-- for drop-down navi -->
+            <li class="dropdown">
+              <a href="{{ site.baseurl }}" class="dropdown-toggle" data-toggle="dropdown"><strong>{{ entry.title }}
+                  <b class="caret"></b></strong>
+              </a>
+              <ul class="dropdown-menu">
+                {% for item in entry.items %}
+                {% if item.ext_url %}
+                <li><a href="{{ item.ext_url }}" target="_blank">{{ item.title }}</a></li>
+                {% elsif item.url %}
+                <li {% if item.group == page.gorup %} class="active" {% endif %}>
+                  <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+              </ul>
+            </li>
+            {% else %}
+            <li><a href="#">{{ entry.title }}</a></li>
+            {% endif %}
+          {% endif %}            
+          {% endfor %}
+	      </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+

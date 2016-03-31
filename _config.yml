@@ -1,0 +1,18 @@
+# Site settings
+title: PRML
+
+email: "swear013@gmail.com"
+url: "http://norman3.github.io"
+github_url: "http://github.com/norman3"
+baseurl: "/prml"
+
+exclude:
+  - README.md
+  - _site
+  
+highlighter: rouge
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
