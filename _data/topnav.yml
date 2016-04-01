@@ -5,8 +5,11 @@ topnav:
         group: Chapter. 1
         url: /docs/chapter01/0
       - title: 2. Probabilty Distribution
-        group: chapter02
+        group: Chapter. 2
         url: /docs/chapter02/0
+      - title: 3. Linear Models for Regression
+        group: Chapter. 3
+        url: /docs/chapter03/0
   - title: 1
     group: "Chapter. 1"
     url: /docs/chapter01/0
@@ -15,7 +18,6 @@ topnav:
     url: /docs/chapter02/0
   - title: 3
     group: "Chapter. 3"
-    disable: true    
     url: /docs/chapter03/0
   - title: 4
     group: "Chapter. 4"
