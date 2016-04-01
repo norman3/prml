@@ -4,6 +4,16 @@ layout: default
 <div class="row">
   <div class="col-sm-12 col-md-6">
     <div class="well-sm">
+      <h3>Introduction</h3>
+      <p>이 페이지는 PRML(Pattern Recognition & Machien Learning, Bishop)을 정리한 문서입니다. 관련 교재가 궁금하신 분들은 아래 버튼을 눌러 교재를 확인하시면 됩니다.</p>
+      <p>
+	      <a href="http://research.microsoft.com/en-us/um/people/cmbishop/prml/" target="_blank">
+	        <button type="button" class="btn btn-success">교재 정보</button>
+	      </a>
+      </p>
+    </div>
+    
+    <div class="well-sm">
       <h3>New Posts</h3>
       <ul class="post-list">
 	      {% for post in site.posts limit:3 %}
@@ -21,22 +31,41 @@ layout: default
   
   <div class="col-sm-12 col-md-6">
     <div class="well-sm">
-      <h3>Introduction</h3>
-      <p>이 페이지는 PRML(Pattern Recognition & Machien Learning, Bishop)을 정리한 문서입니다. 관련 교재가 궁금하신 분들은 아래 버튼을 눌러 교재를 확인하시면 됩니다.</p>
-      <p>
-	      <a href="http://research.microsoft.com/en-us/um/people/cmbishop/prml/" target="_blank">
-	        <button type="button" class="btn btn-success">교재 정보</button>
-	      </a>
-      </p>
+      <h3>Chapter 1. 소개 (Introduction)</h3>
+      <ul>
+        <li><a href="{{ site.baseurl }}/docs/chapter01/0">0. 프롤로그 (Prolog)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter01/1">1. 예제 : 다항식 커브 피팅 (Example: Polynomial Curve Fitting)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter01/2">2. 확률 이론 (Probability Theory)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter01/3">3. 모델 선택 (Model Selection)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter01/4">4. 차원의 저주 (The Curse of Dimension)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter01/5">5. 결정 이론 (Decision Theory)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter01/6">6. 정보 이론 (Information Theory)</a></li>
+      </ul>
     </div>
     <div class="well-sm">
-      <h3>Document</h3>
-      <p>정리한 문서를 살펴봅니다.</p>
-      <p>
-	      <a href="{{ site.baseurl }}/docs/chapter01/0">
-	        <button type="button" class="btn btn-success">1장 바로가기</button>
-	      </a>
-      </p>
+      <h3>Chapter 2. 확률 분포 (Probability Distributions)</h3>
+      <ul>
+        <li><a href="{{ site.baseurl }}/docs/chapter02/0">0. 프롤로그 (Prolog)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter02/1">1. 이진 변수 (Binary Variables)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter02/2">2. 다항 분포 (Multinomial Variables)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter02/3_1">3. 가우시안 분포 (The Gaussian Distributions) - Part.I</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter02/3_2">3. 가우시안 분포 (The Gaussian Distributions) - Part.II</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter02/3_3">3. 가우시안 분포 (The Gaussian Distributions) - Part.III</a></li>      
+        <li><a href="{{ site.baseurl }}/docs/chapter02/4">4. 지수 분포족 (The Exponential Family)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter02/5">5. 비모수적 방법들 (Nonparametric Methods)</a></li>
+      </ul>
+    </div>
+    <div class="well-sm">
+      <h3>Chapter 3. 회귀 선형 모델 (Linear Models for Regression)</h3>
+      <ul>
+        <li><a href="{{ site.baseurl }}/docs/chapter03/0">0. 프롤로그 (Prolog)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter03/1">1. [준비중] 선형 기저 함수 모델 (Linear Basis Function Model)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter03/2">2. [준비중] 바이어스-분산 분해 (Bias-Variance Decomposition)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter03/3">3. [준비중] 베이지언 선형 회귀 (Bayesian Linear Regression)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter03/4">4. [준비중] 베이지언 모델 비교 (Bayesian Model Comparison)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter03/5">5. [준비중] 증거 영역 근사 (Evidence Approximation)</a></li>
+        <li><a href="{{ site.baseurl }}/docs/chapter03/6">6. [준비중] 고정된 기저 함수의 제약점 (Limitations of Fixed Basis Functions)</a></li>
+      </ul>
     </div>
   </div>
 </div>
