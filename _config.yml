@@ -7,6 +7,7 @@ github_url: "http://github.com/norman3/prml"
 github_editurl: "/blob/gh-pages"
 github_profile: "http://github.com/norman3"
 baseurl: "/prml"
+disqus_shortname: norman3github
 
 exclude:
   - README.md
