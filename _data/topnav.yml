@@ -40,7 +40,6 @@ topnav:
     url: /docs/chapter08/0
   - title: 9
     group: "Chapter. 9"
-    disable: true
     url: /docs/chapter09/0
   - title: 10
     group: "Chapter. 10"
