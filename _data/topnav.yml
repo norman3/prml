@@ -10,6 +10,12 @@ topnav:
       - title: 3. Linear Models for Regression
         group: Chapter. 3
         url: /docs/chapter03/0
+      - title: 4. Linear Models for Classification
+        group: Chapter. 4
+        url: /docs/chapter04/0
+      - title: 5. Neural Networks
+        group: Chapter. 5
+        url: /docs/chapter05/0
   - title: 1
     group: "Chapter. 1"
     url: /docs/chapter01/0
@@ -21,7 +27,6 @@ topnav:
     url: /docs/chapter03/0
   - title: 4
     group: "Chapter. 4"
-    disable: true    
     url: /docs/chapter04/0
   - title: 5
     group: "Chapter. 5"
