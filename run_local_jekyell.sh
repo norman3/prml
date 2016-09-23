@@ -1,3 +1,3 @@
 #!/bin/bash
 
-jekyll serve -w -p 10000
+jekyll serve -w -P 10000 --incremental

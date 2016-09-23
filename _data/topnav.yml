@@ -16,6 +16,15 @@ topnav:
       - title: 5. Neural Networks
         group: Chapter. 5
         url: /docs/chapter05/0
+      - title: 8. Graphical Models
+        group: Chapter. 8
+        url: /docs/chapter08/0
+      - title: 9. Mixture Models and EM
+        group: Chapter. 9
+        url: /docs/chapter09/0
+      - title: 10. Variational Inference
+        group: Chapter. 10
+        url: /docs/chapter10/0
   - title: 1
     group: "Chapter. 1"
     url: /docs/chapter01/0
@@ -51,7 +60,6 @@ topnav:
     url: /docs/chapter10/0
   - title: 11
     group: "Chapter. 11"
-    disable: true
     url: /docs/chapter11/0
     
 
